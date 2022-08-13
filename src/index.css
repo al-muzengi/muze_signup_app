@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #1f2833;
+  max-height: 100vh;
+}
+.form_container{
+  background:#264646;
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 50vw;
+  margin:15vh auto;
+  padding: 25px;
+}
+
+label{
+  position: relative;
+  left:-45px;
+}
+
+input{
+  border-radius: 10px;
+  width: 350px;
+  height: 35px;
+}
+
+/*My OCD is the villain for the following 2 ID modifications */
+#age{
+  position: relative;
+  right: -35px;
+}
+
+#email{
+  position: relative;
+  right: 20px;
+}
+
+.input{
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.btn_container{
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  font-size: .9em;
+  border-radius: 10px;
+  position: relative;
+  top: 10px;
+  padding: 5px;
+  animation: btn_animation 2.5s linear 4.5s infinite;
+}
+
+@keyframes btn_animation{
+  0%{
+    transform:scale(1,1);
+  }
+  50%{
+    transform: scale(.8,.8);
+  }
+  100%{
+    transform:scale(1,1);
+  }
+}
+
+/* For the typing effect for the welcoming message */
+.typewriter_container{
+  display: inline-block;
+  position: relative;
+  top: 15vh;
+  left: 42vw;
+}
+.typed_out{
+  font-family: 'Trebuchet MS', sans-serif; 
+  color: white;
+  font-size: 1.7rem;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+}
+#one{
+  position: relative;
+  left: 3.5vw;
+  animation: typing_effect 1.9s steps(35,end) forwards;  
+}
+#two{
+  border-right: .15em solid transparent;
+  animation: typing_effect 2s steps(60,end) 2s forwards,blinking .95s 2s infinite;
+}
+
+@keyframes typing_effect{
+  from{width:0}
+  to{width: 100%}
+}
+
+@keyframes blinking{
+  from{border-color: white}
+  to{border-color: transparent}
+}
