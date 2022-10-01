@@ -8,11 +8,10 @@ body{
 }
 .form_container{
   background:#264646;
-  border: 2px solid black;
   border-radius: 10px;
-  max-width: 50vw;
-  margin:15vh auto;
-  padding: 25px;
+  max-width: 45vw;
+  margin:10vh auto;
+  padding: 15px;
 }
 
 label{
@@ -20,27 +19,35 @@ label{
   left:-45px;
 }
 
-input{
-  border-radius: 10px;
-  width: 350px;
-  height: 35px;
-}
-
-/*My OCD is the villain for the following 2 ID modifications */
-#age{
+#pwd{
   position: relative;
-  right: -35px;
+  left: -30px;
 }
 
+input{
+  border-radius: 8px;
+  width: 350px;
+  height: 30px;
+}
+
+/*My OCD is the villain for the following modifications */
+#username{
+  position: relative;
+  right: -5px;
+}
+#password{
+  position: relative;
+  right: -20px;
+}
 #email{
   position: relative;
-  right: 20px;
+  right: 15px;
 }
 
 .input{
-  padding: 15px;
+  padding: 12px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .btn_container{
@@ -48,11 +55,9 @@ input{
   justify-content: center;
 }
 
-.btn{
-  font-size: .9em;
+.btn,.btn2{
+  font-size: .75em;
   border-radius: 10px;
-  position: relative;
-  top: 10px;
   padding: 5px;
   animation: btn_animation 2.5s linear 4.5s infinite;
 }
@@ -73,13 +78,13 @@ input{
 .typewriter_container{
   display: inline-block;
   position: relative;
-  top: 15vh;
-  left: 42vw;
+  top: 10vh;
+  left: 43vw;
 }
 .typed_out{
   font-family: 'Trebuchet MS', sans-serif; 
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   overflow: hidden;
   white-space: nowrap;
   width: 0;
@@ -102,4 +107,21 @@ input{
 @keyframes blinking{
   from{border-color: white}
   to{border-color: transparent}
+}
+
+/* Password Visibility */
+.pwd_btn{
+  position: relative;
+  right: -25px;
+  width: 29px;
+  height: 25px;
+  border-radius: 5px;
+}
+.pwd_container{
+  position: relative;
+  top: -32px;
+}
+.btn2{
+  position: relative;
+  top: 70px;
 }
